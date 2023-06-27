@@ -9,7 +9,7 @@ namespace Carteira_De_Clientes.Models
     public class OrdemDeServico : CreateReadUpdateDelete<OrdemDeServico>
     {
         public int Id { get; set; }
-        public bool Done { get; set; }
+        public Dones Done { get; set; }
         public int FuncionarioId { get; set; }
         public Funcionario Funcionario { get; set; }
         public int ServicoId { get; set; }
@@ -19,9 +19,9 @@ namespace Carteira_De_Clientes.Models
         {
         }
 
-        public OrdemDeServico(bool done, int FuncionarioId, int servicoId)
+        public OrdemDeServico(string done, int funcionarioId, int servicoId)
         {
-            this.Done = done;
+            Done = (Dones)Enum.Parse(typeof(Dones), done);
             this.FuncionarioId = FuncionarioId;
             this.ServicoId = servicoId;
         }
