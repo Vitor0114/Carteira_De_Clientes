@@ -20,7 +20,9 @@ namespace Banco
         public DbSet<Servico> Servicos { get; set; }
 
 
-        private string _connectionString = "Server=localhost;User Id=root;Database=senhas;";
+        private string _connectionString = "Server=carteiradeclientes;User Id=root;Database=senhas;";
+
+        
 
     }
 }
