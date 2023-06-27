@@ -1,9 +1,14 @@
 using System;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
+using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Storage;
+using MySql.Data.EntityFrameworkCore.Extensions;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Carteira_De_Clientes.Models;
 using System.Data.SqlClient;
 using System.Linq;
+
 
 namespace Banco
 {
@@ -11,7 +16,7 @@ namespace Banco
     {
         public DataBase() { }
         public DataBase(DbContextOptions<DataBase> options) : base(options) { }
-        
+
         public DbSet<OrdemDeServico> OrdemDeServicos { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Funcionario> Funcionarios { get; set; }
@@ -22,7 +27,7 @@ namespace Banco
 
         private string _connectionString = "Server=carteiradeclientes;User Id=root;Database=senhas;";
 
-        
+
 
     }
 }
