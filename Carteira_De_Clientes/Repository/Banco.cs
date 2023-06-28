@@ -6,8 +6,12 @@ using Microsoft.EntityFrameworkCore.Storage;
 using MySql.Data.EntityFrameworkCore.Extensions;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Carteira_De_Clientes.Models;
+using MySql.Data.EntityFrameworkCore.Extensions;
 using System.Data.SqlClient;
 using System.Linq;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
+using Pomelo.EntityFrameworkCore.MySql.Storage;
+using MySqlConnector;
 
 
 namespace Banco
@@ -23,10 +27,12 @@ namespace Banco
         public DbSet<Contrato> Contratos { get; set; }
         public DbSet<Ordem> Ordens { get; set; }
         public DbSet<Servico> Servicos { get; set; }
+        private string _connectionString = "Server=localhost;User Id=root;Database=senhas;";
 
-
-        private string _connectionString = "Server=carteiradeclientes;User Id=root;Database=senhas;";
-
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseMySql(_connectionString, ServerVersion.AutoDetect(_connectionString));
+        }
 
 
     }

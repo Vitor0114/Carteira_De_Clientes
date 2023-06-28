@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "utRTIvrCrEkNri5PYHZilaqYqa40m2BWVqACDp6/9Ddhtkfw9A6ZdVV9rVzWq63NTbSit3A0oFM+UjbFGIGkug==",
+  "dgSpecHash": "ZEY1oN3aUbv2gAsoKyaDU5mzTvDzzrtL9A4e+Fxov+FhOTYFRarIysvDWdOWT90OcpuG2FcB7i3PyulN8G29Gg==",
   "success": true,
   "projectFilePath": "C:\\Users\\vitor\\Desktop\\VitorProject\\Carteira_De_Clientes\\Carteira_De_Clientes\\Carteira_De_Clientes.csproj",
   "expectedPackageFiles": [
@@ -31,6 +31,9 @@
     "C:\\Users\\vitor\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\vitor\\.nuget\\packages\\mysql.data\\8.0.33\\mysql.data.8.0.33.nupkg.sha512",
     "C:\\Users\\vitor\\.nuget\\packages\\mysql.data.entityframeworkcore\\8.0.22\\mysql.data.entityframeworkcore.8.0.22.nupkg.sha512",
+    "C:\\Users\\vitor\\.nuget\\packages\\mysql.entityframeworkcore\\7.0.2\\mysql.entityframeworkcore.7.0.2.nupkg.sha512",
+    "C:\\Users\\vitor\\.nuget\\packages\\mysqlconnector\\2.2.6\\mysqlconnector.2.2.6.nupkg.sha512",
+    "C:\\Users\\vitor\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\7.0.0\\pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512",
     "C:\\Users\\vitor\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\portable.bouncycastle.1.9.0.nupkg.sha512",
     "C:\\Users\\vitor\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Users\\vitor\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

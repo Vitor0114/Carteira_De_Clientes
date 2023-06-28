@@ -3,7 +3,6 @@ namespace Carteira_De_Clientes
 
     public class Login : Form
     {
-
         private Button btnEntrar;
         private Button btnSenha;
         private Label lblLogin;
@@ -11,7 +10,7 @@ namespace Carteira_De_Clientes
         private TextBox txbLogin;
         private TextBox txbSenha;
         private PictureBox picboxPremyer;
-
+        
         public Login()
         {
             InitializeComponent();
@@ -45,6 +44,7 @@ namespace Carteira_De_Clientes
             txbSenha.Location = new System.Drawing.Point(220, 360);
             txbSenha.Size = new System.Drawing.Size(150, 30);
             txbSenha.Name = "txbSenha";
+            txbSenha.UseSystemPasswordChar = true;
             this.Controls.Add(txbSenha);
 
 
@@ -83,6 +83,7 @@ namespace Carteira_De_Clientes
             picboxPremyer.Image = Image.FromFile(@"Views\assets\Premyer.png");
             picboxPremyer.SizeMode = PictureBoxSizeMode.StretchImage;
             this.Controls.Add(picboxPremyer);
+
         }
         private void BtnEntrar_Click(object sender, EventArgs e)
         {
@@ -112,6 +113,5 @@ namespace Carteira_De_Clientes
                 Application.Exit();
             }
         }
-
     }
 }
