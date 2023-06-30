@@ -17,6 +17,11 @@ namespace View
         public ListaCliente()
         {
             this.Text = "Listagem de Cliente";
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.WindowState = FormWindowState.Maximized;
+            this.TopLevel = false;
+            this.AutoScroll = true;
             this.Load += new EventHandler(ListaCliente_Load);
 
         }
@@ -82,7 +87,7 @@ namespace View
             buttonPanel.Dock = DockStyle.Bottom;
 
             this.Size = new Size(600, 400);
-            this.BackColor = System.Drawing.ColorTranslator.FromHtml("#748E83");
+            this.BackColor = System.Drawing.Color.LightSlateGray;
             this.ControlBox = false;
             this.FormBorderStyle = FormBorderStyle.None;
             this.Controls.Add(this.buttonPanel);
@@ -106,7 +111,7 @@ namespace View
             clienteGridView.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
             clienteGridView.CellBorderStyle = DataGridViewCellBorderStyle.Single;
             clienteGridView.GridColor = Color.Black;
-            clienteGridView.BackgroundColor = System.Drawing.ColorTranslator.FromHtml("#748E83");
+            clienteGridView.BackgroundColor = System.Drawing.Color.LightSlateGray;
 
             clienteGridView.RowHeadersVisible = false;
 

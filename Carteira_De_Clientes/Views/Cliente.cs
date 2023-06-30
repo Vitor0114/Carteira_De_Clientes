@@ -28,11 +28,12 @@ namespace View
 
         public Cliente(int? clienteId)
         {
-            this.Text = "Cadastro de Cliente";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.BackColor = System.Drawing.ColorTranslator.FromHtml("#748E83");
-
-            this.Size = new Size(600, 600);
+            this.BackColor = System.Drawing.Color.LightSlateGray;
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.Location = new System.Drawing.Point(700, 350);
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.Size = new Size(800, 600);
 
             lblId = new Label();
             lblId.Text = "Id:";

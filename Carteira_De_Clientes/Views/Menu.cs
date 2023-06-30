@@ -125,11 +125,6 @@ namespace Carteira_De_Clientes
             this.contentPanel.Controls.Clear();
 
             ListaCliente listaClienteForm = new ListaCliente();
-            listaClienteForm.StartPosition = FormStartPosition.CenterScreen;
-            listaClienteForm.FormBorderStyle = FormBorderStyle.None;
-            listaClienteForm.WindowState = FormWindowState.Maximized;
-            listaClienteForm.TopLevel = false;
-            listaClienteForm.AutoScroll = true;
             this.contentPanel.Controls.Add(listaClienteForm);
             listaClienteForm.Show();
 

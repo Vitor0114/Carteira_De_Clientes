@@ -57,29 +57,25 @@ namespace View
 
 
             adicionarFuncionarioButton.Text = "Novo";
-            adicionarFuncionarioButton.Location = new Point(200, 10);
+            adicionarFuncionarioButton.Location = new Point(270, 10);
             adicionarFuncionarioButton.Click += new EventHandler(adicionarFuncionarioButton_Click);
             adicionarFuncionarioButton.BackColor = Color.Snow;
-            adicionarFuncionarioButton.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
             atualizarFuncionarioButton.Text = "Editar";
-            atualizarFuncionarioButton.Location = new Point(300, 10);
+            atualizarFuncionarioButton.Location = new Point(350, 10);
             atualizarFuncionarioButton.Click += new EventHandler(atualizarFuncionarioButton_Click);
             atualizarFuncionarioButton.BackColor = Color.Snow;
-            atualizarFuncionarioButton.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
             deletarFuncionarioButton.Text = "Excluir";
-            deletarFuncionarioButton.Location = new Point(400, 10);
+            deletarFuncionarioButton.Location = new Point(430, 10);
             deletarFuncionarioButton.Click += new EventHandler(deletarFuncionarioButton_Click);
             deletarFuncionarioButton.BackColor = Color.Snow;
-            deletarFuncionarioButton.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
+            
             voltarButton.Text = "Voltar";
-            voltarButton.Location = new Point(500, 10);
+            voltarButton.Location = new Point(510, 10);
             voltarButton.Click += new EventHandler(voltarButton_Click);
             voltarButton.BackColor = Color.Snow;
-            voltarButton.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
+            
             buttonPanel.Controls.Add(adicionarFuncionarioButton);
             buttonPanel.Controls.Add(atualizarFuncionarioButton);
             buttonPanel.Controls.Add(deletarFuncionarioButton);
@@ -88,10 +84,11 @@ namespace View
             buttonPanel.Dock = DockStyle.Bottom;
 
             this.Size = new Size(600, 400);
-            this.BackColor = System.Drawing.ColorTranslator.FromHtml("#748E83");
+            this.BackColor = System.Drawing.Color.LightSlateGray;
             this.ControlBox = false;
             this.FormBorderStyle = FormBorderStyle.None;
             this.Controls.Add(this.buttonPanel);
+
         }
 
         private void SetupDataGridView()
@@ -114,7 +111,7 @@ namespace View
                 DataGridViewHeaderBorderStyle.Single;
             funcionarioGridView.CellBorderStyle = DataGridViewCellBorderStyle.Single;
             funcionarioGridView.GridColor = Color.Black;
-            funcionarioGridView.BackgroundColor = System.Drawing.ColorTranslator.FromHtml("#748E83");
+            funcionarioGridView.BackgroundColor = System.Drawing.Color.LightSlateGray;
             funcionarioGridView.RowHeadersVisible = false;
 
             funcionarioGridView.Columns[0].Name = "Id";
@@ -163,6 +160,7 @@ namespace View
 
         private void adicionarFuncionarioButton_Click(object sender, EventArgs e)
         {
+
             Funcionario telaFuncionario = new Funcionario(null);
             telaFuncionario.FormClosed += new FormClosedEventHandler(recarregarDadosGrid);
             telaFuncionario.ShowDialog();

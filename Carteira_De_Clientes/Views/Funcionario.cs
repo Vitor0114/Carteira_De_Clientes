@@ -25,9 +25,12 @@ namespace View
         public Funcionario(int? funcionarioId)
         {
 
-            this.Text = "Cadastro de Funcionário";
-            this.BackColor = System.Drawing.ColorTranslator.FromHtml("#748E83");
-            this.Size = new Size(600, 500);
+            this.BackColor = System.Drawing.Color.LightSlateGray;
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.Location = new System.Drawing.Point(700, 350);
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.Size = new Size(800, 600);
 
             txtId = new TextBox();
             txtId.Location = new Point(80, 60);
